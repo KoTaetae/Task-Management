@@ -235,7 +235,7 @@ const searchTask = (e) => {
     }
 
 const resultData = state.taskList.filter(({title}) => {
-    return title.toLowerCase().include(e.target.value.toLowerCase());
+    return title.toLowerCase().includes(e.target.value.toLowerCase());
 });
 
 console.log(resultData);
